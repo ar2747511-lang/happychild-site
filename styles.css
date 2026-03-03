@@ -417,3 +417,53 @@ body.fr{
   .hero-buttons{justify-content:center;}
   .hero-stats{justify-content:center;}
 }
+
+
+/* ===== AVIS SECTION ===== */
+.avis-section{
+  padding:80px 10%;
+  text-align:center;
+  background:#f9f9f9;
+}
+
+.avis-section h2{
+  margin-bottom:50px;
+  font-size:28px;
+}
+
+.avis-grid{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.avis-card{
+  background:#fff;
+  padding:30px;
+  border-radius:20px;
+  max-width:320px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.stars{
+  color:#f5b301;
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+/* ===== PREMIUM MODEL CARDS ===== */
+.card, .tile{
+  transition:0.3s ease;
+  border-radius:20px;
+}
+
+.card:hover, .tile:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+.card img, .tile img{
+  border-radius:20px;
+}
+
