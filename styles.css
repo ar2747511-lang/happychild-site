@@ -567,3 +567,75 @@ body.fr{
 @media (max-width: 520px){
   .floating-social{inset-inline-end:12px;inset-block-end:80px;}
 }
+
+
+/* ===== HERO SLIDER (PREMIUM) ===== */
+.hero-slider{
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.hero-slider .slide{
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  transition: opacity 500ms ease;
+}
+.hero-slider .slide.active{
+  opacity: 1;
+  position: relative;
+}
+
+/* Mobile: keep hero media visible and sized correctly */
+@media (max-width: 768px){
+  .hero{
+    flex-direction: column;
+    gap: 18px;
+  }
+  .hero-media, .hero__media, .hero-right{
+    display: block !important;
+    width: 100% !important;
+  }
+  .hero-slider{
+    max-width: 100% !important;
+    height: 240px;
+  }
+  .hero-slider .slide{
+    height: 240px;
+  }
+}
+
+/* ===== SOCIAL FLOAT (ONLY ONE STACK) ===== */
+.social-fixed{
+  position: fixed;
+  right: 14px;
+  bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+.social-fixed a{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+  text-decoration: none;
+}
+@media (max-width:768px){
+  .social-fixed{
+    right: 10px;
+    bottom: 110px;
+  }
+}
+/* If another whatsapp button exists, hide it to avoid duplicates */
+.whatsapp-float{ display:none !important; }
