@@ -1,319 +1,276 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Happy Child Universe | عالم الطفل السعيد</title>
-  <meta name="description" content="تصميم وتنفيذ غرف أطفال فاخرة حسب الطلب | 3D قبل التنفيذ | تصنيع وتركيب احترافي" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Happy Child Universe | عالم الطفل السعيد</title>
+<meta content="تصميم وتنفيذ غرف أطفال فاخرة حسب الطلب | 3D قبل التنفيذ | تصنيع وتركيب احترافي" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" rel="stylesheet">
+</link></link></head>
 <body>
-
-  <div class="topbar">
-    <div class="container topbar__row">
-      <span class="topbar__hint" data-i18n="topbar_hint">✨ Votre espace où l’imagination prend vie</span>
-      <a class="topbar__link" href="#contact" data-i18n="topbar_cta">اطلب عرض السعر</a>
-    </div>
-  </div>
-
-  <header class="header">
-    <div class="container header__row">
-      <a class="brand" href="#">
-        <img class="brand__logo" src="assets/logo.jpg" alt="Happy Child Logo" />
-        <div class="brand__text">
-          <strong>Happy Child</strong>
-          <span>عالم الطفل السعيد</span>
-        </div>
-      </a>
-
-      <nav class="nav" id="nav">
-        <a href="#services" data-i18n="nav_services">الخدمات</a>
-        <a href="#models" data-i18n="nav_models">الموديلات</a>
-        <a href="#portfolio" data-i18n="nav_portfolio">أعمالنا</a>
-        <a href="#contact" class="btn btn--small" data-i18n="nav_contact">تواصل معنا</a>
-      </nav>
-
-      <div class="lang-switch" aria-label="Language switch">
-        <button type="button" class="lang-btn" id="langAr">AR</button>
-        <button type="button" class="lang-btn" id="langFr">FR</button>
-      </div>
-
-
-      <button class="burger" id="burger" aria-label="menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero__grid">
-      <div class="hero__content">
-        <p class="badge" data-i18n="hero_badge">تصميم • تصنيع • تركيب</p>
-        <h1 data-i18n-html="hero_h1">نصمّم غرف أطفال <span class="accent">راقية وناعمة</span> حسب الطلب</h1>
-        <p class="lead" data-i18n-html="hero_lead">
+<div class="topbar">
+<div class="container topbar__row">
+<span class="topbar__hint" data-i18n="topbar_hint">✨ Votre espace où l’imagination prend vie</span>
+<a class="topbar__link" data-i18n="topbar_cta" href="#contact">اطلب عرض السعر</a>
+</div>
+</div>
+<header class="header">
+<div class="container header__row">
+<a class="brand" href="#">
+<img alt="Happy Child Logo" class="brand__logo" src="assets/logo.jpg"/>
+<div class="brand__text">
+<strong>Happy Child</strong>
+<span data-i18n="brand_tagline">عالم الطفل السعيد</span>
+</div>
+</a>
+<nav class="nav" id="nav">
+<a data-i18n="nav_services" href="#services">الخدمات</a>
+<a data-i18n="nav_models" href="#models">الموديلات</a>
+<a data-i18n="nav_portfolio" href="#portfolio">أعمالنا</a>
+<a class="btn btn--small" data-i18n="nav_contact" href="#contact">تواصل معنا</a>
+</nav>
+<div aria-label="Language switch" class="lang-switch">
+<button class="lang-btn" id="langAr" type="button">AR</button>
+<button class="lang-btn" id="langFr" type="button">FR</button>
+</div>
+<button aria-label="menu" class="burger" id="burger">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+<!-- HERO -->
+<section class="hero">
+<div class="container hero__grid">
+<div class="hero__content">
+<p class="badge" data-i18n="hero_badge">تصميم • تصنيع • تركيب</p>
+<h1 data-i18n-html="hero_h1">نصمّم غرف أطفال <span class="accent">راقية وناعمة</span> حسب الطلب</h1>
+<p class="lead" data-i18n-html="hero_lead">
           كنخدمو غير بالموديلات اللي كنصايبوهم فعلاً.  
           تصميم 3D قبل التنفيذ + جودة عالية + تركيب احترافي.
         </p>
-
-        <div class="hero__cta">
-          <a class="btn" href="#contact" data-i18n="hero_cta_primary">اطلب تصميمك الآن</a>
-          <a class="btn btn--ghost" href="#portfolio" data-i18n="hero_cta_secondary">شوف الأعمال</a>
-        </div>
-
-        <div class="trust">
-          <div class="trust__item" data-i18n="trust_1">✅ موديلات حقيقية</div>
-          <div class="trust__item" data-i18n="trust_2">✅ تشطيب راقي</div>
-          <div class="trust__item" data-i18n="trust_3">✅ خدمة 3D</div>
-        </div>
-      </div>
-
-      <div class="hero__media">
-        <img src="assets/hero.jpg" alt="مشروع Happy Child" />
-        <div class="hero__card">
-          <strong data-i18n="hero_card_title">3D قبل التنفيذ</strong>
-          <span data-i18n="hero_card_sub">باش تشوف النتيجة قبل ما نبداو الخدمة</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="section__head">
-        <h2 data-i18n="services_h2">الخدمات ديالنا</h2>
-        <p data-i18n="services_p">من الفكرة حتى التركيب… كلشي عندنا.</p>
-      </div>
-
-      <div class="grid3">
-        <div class="card">
-          <h3 data-i18n="svc1_h3">تصميم 3D</h3>
-          <p data-i18n="svc1_p">كنصايبو تصور شامل للغرفة باش تكون مطمّن قبل التنفيذ.</p>
-        </div>
-        <div class="card">
-          <h3 data-i18n="svc2_h3">تصنيع حسب القياس</h3>
-          <p data-i18n="svc2_p">أسِرّة، خزانات، مكاتب، ديكور جداري… حسب المساحة والستايل.</p>
-        </div>
-        <div class="card">
-          <h3 data-i18n="svc3_h3">تركيب احترافي</h3>
-          <p data-i18n="svc3_p">تركيب نظيف ومحترم للسلامة، ونتيجة فخمة.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MODELS -->
-  <section class="section section--alt" id="models">
-    <div class="container">
-      <div class="section__head">
-        <h2 data-i18n="models_h2">موديلات من خدمتنا</h2>
-        <p data-i18n="models_p">هاد الصور من مشاريع/موديلات Happy Child.</p>
-      </div>
-
-      <div class="grid4">
-                <article class="tile">
-          <img src="assets/model-lapinou.jpg" alt="Chambre Lapinou" />
-          <div class="tile__body">
-            <h3>Chambre Lapinou</h3>
-            <p>موديل سرير أرنب بتفاصيل ناعمة وتشطيب راقي.</p>
-          </div>
-        </article>
-
-        <article class="tile">
-          <img src="assets/model-mickey.jpg" alt="Chambre Mickey" />
-          <div class="tile__body">
-            <h3>Chambre Mickey</h3>
-            <p>موديل سرير ميكي (ستايل هادئ) مع إمكانيات تخصيص.</p>
-          </div>
-        </article>
-
-        <article class="tile">
-          <img src="assets/model-bubbly.jpg" alt="Chambre Bubbly" />
-          <div class="tile__body">
-            <h3>Chambre Bubbly</h3>
-            <p>موديل سرير ستايل سحابة بألوان منعشة.</p>
-          </div>
-        </article>
-
-        <article class="tile">
-          <img src="assets/model-housebed.jpg" alt="Lit Maison" />
-          <div class="tile__body">
-            <h3>Lit Maison</h3>
-            <p>موديل سرير على شكل بيت مع درج/سلم عملي.</p>
-          </div>
-        </article>
-
+<div class="hero__cta">
+<a class="btn" data-i18n="hero_cta_primary" href="#contact">اطلب تصميمك الآن</a>
+<a class="btn btn--ghost" data-i18n="hero_cta_secondary" href="#portfolio">شوف الأعمال</a>
+</div>
+<div class="trust">
+<div class="trust__item" data-i18n="trust_1">✅ موديلات حقيقية</div>
+<div class="trust__item" data-i18n="trust_2">✅ تشطيب راقي</div>
+<div class="trust__item" data-i18n="trust_3">✅ خدمة 3D</div>
+</div>
+</div>
+<div class="hero__media">
+<img alt="مشروع Happy Child" src="assets/hero.jpg"/>
+<div class="hero__card">
+<strong data-i18n="hero_card_title">3D قبل التنفيذ</strong>
+<span data-i18n="hero_card_sub">باش تشوف النتيجة قبل ما نبداو الخدمة</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES -->
+<section class="section" id="services">
+<div class="container">
+<div class="section__head">
+<h2 data-i18n="services_h2">الخدمات ديالنا</h2>
+<p data-i18n="services_p">من الفكرة حتى التركيب… كلشي عندنا.</p>
+</div>
+<div class="grid3">
+<div class="card">
+<h3 data-i18n="svc1_h3">تصميم 3D</h3>
+<p data-i18n="svc1_p">كنصايبو تصور شامل للغرفة باش تكون مطمّن قبل التنفيذ.</p>
+</div>
+<div class="card">
+<h3 data-i18n="svc2_h3">تصنيع حسب القياس</h3>
+<p data-i18n="svc2_p">أسِرّة، خزانات، مكاتب، ديكور جداري… حسب المساحة والستايل.</p>
+</div>
+<div class="card">
+<h3 data-i18n="svc3_h3">تركيب احترافي</h3>
+<p data-i18n="svc3_p">تركيب نظيف ومحترم للسلامة، ونتيجة فخمة.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- MODELS -->
+<section class="section section--alt" id="models">
+<div class="container">
+<div class="section__head">
+<h2 data-i18n="models_h2">موديلات من خدمتنا</h2>
+<p data-i18n="models_p">هاد الصور من مشاريع/موديلات Happy Child.</p>
+</div>
+<div class="grid4">
 <article class="tile">
-          <img src="assets/model-green.jpg" alt="سرير أخضر ستايل ناعم" />
-          <div class="tile__body">
-            <h3>سرير ستايل ناعم</h3>
-            <p>ألوان دافئة + راحة + تفاصيل راقية.</p>
-          </div>
-        </article>
-
-        <article class="tile">
-          <img src="assets/model-blue.jpg" alt="ستايل البيت مع إضاءة" />
-          <div class="tile__body">
-            <h3>ستايل البيت بإضاءة</h3>
-            <p>ديكور house مع لمسة مضيئة ساحرة.</p>
-          </div>
-        </article>
-
-        <article class="tile">
-          <img src="assets/model-shelf.jpg" alt="خزانة شكل دار" />
-          <div class="tile__body">
-            <h3>خزانة شكل دار</h3>
-            <p>تنظيم + شكل جميل للأطفال.</p>
-          </div>
-        </article>
-
-        <article class="tile">
-          <img src="assets/model-map.jpg" alt="مكتب + ديكور خريطة" />
-          <div class="tile__body">
-            <h3>مكتب + ديكور جداري</h3>
-            <p>حل عملي للدراسة بستايل عصري.</p>
-          </div>
-        </article>
-
-        <!--
+<img alt="Chambre Lapinou" src="assets/model-lapinou.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_01_title">Chambre Lapinou</h3>
+<p data-i18n="model_01_desc">موديل سرير أرنب بتفاصيل ناعمة وتشطيب راقي.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="Chambre Mickey" src="assets/model-mickey.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_02_title">Chambre Mickey</h3>
+<p data-i18n="model_02_desc">موديل سرير ميكي (ستايل هادئ) مع إمكانيات تخصيص.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="Chambre Bubbly" src="assets/model-bubbly.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_03_title">Chambre Bubbly</h3>
+<p data-i18n="model_03_desc">موديل سرير ستايل سحابة بألوان منعشة.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="Lit Maison" src="assets/model-housebed.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_04_title">Lit Maison</h3>
+<p data-i18n="model_04_desc">موديل سرير على شكل بيت مع درج/سلم عملي.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="سرير أخضر ستايل ناعم" src="assets/model-green.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_05_title">سرير ستايل ناعم</h3>
+<p data-i18n="model_05_desc">ألوان دافئة + راحة + تفاصيل راقية.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="ستايل البيت مع إضاءة" src="assets/model-blue.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_06_title">ستايل البيت بإضاءة</h3>
+<p data-i18n="model_06_desc">ديكور house مع لمسة مضيئة ساحرة.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="خزانة شكل دار" src="assets/model-shelf.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_07_title">خزانة شكل دار</h3>
+<p data-i18n="model_07_desc">تنظيم + شكل جميل للأطفال.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="مكتب + ديكور خريطة" src="assets/model-map.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_08_title">مكتب + ديكور جداري</h3>
+<p data-i18n="model_08_desc">حل عملي للدراسة بستايل عصري.</p>
+</div>
+</article>
+<!--
           ✅ باش تزيد موديل جديد:
           1) زِد الصورة فـ assets (مثال: assets/model-5.jpg)
           2) كوپي هاد البلوك وبدّل src + العنوان + الوصف
         -->
-
-        <article class="tile">
-          <img src="assets/room-1.jpg" alt="موديل غرفة بألوان ناعمة" />
-          <div class="tile__body">
-            <h3>غرفة متكاملة (ستايل ناعم)</h3>
-            <p>سرير + خزانة + مكتب بنفس الستايل.</p>
-          </div>
-        </article>
-
-        <article class="tile">
-          <img src="assets/room-2.jpg" alt="موديل غرفة وردية بإضاءة" />
-          <div class="tile__body">
-            <h3>غرفة بإضاءة ديكور</h3>
-            <p>تفاصيل راقية وإضاءة كتزيد جمال الغرفة.</p>
-          </div>
-        </article>
-
-        <article class="tile">
-          <img src="assets/model-shelf.jpg" alt="موديل خزانة تنظيم" />
-          <div class="tile__body">
-            <h3>خزانة + رفوف تنظيم</h3>
-            <p>حل ذكي للتخزين مع شكل كيعجب الأطفال.</p>
-          </div>
-        </article>
-
-        <article class="tile">
-          <img src="assets/model-blue.jpg" alt="موديل ديكور house" />
-          <div class="tile__body">
-            <h3>ديكور House + رفوف</h3>
-            <p>ستايل عصري للأطفال ولمسة ديكور فخمة.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section class="section" id="portfolio">
-    <div class="container">
-      <div class="section__head">
-        <h2 data-i18n="portfolio_h2">أعمالنا</h2>
-        <p data-i18n="portfolio_p">نماذج من غرف منجزة بلمسة Happy Child.</p>
-      </div>
-
-      <div class="grid2">
-        <div class="bigshot">
-          <img src="assets/room-1.jpg" alt="غرفة وردية فاخرة" />
-          <div class="bigshot__cap" data-i18n="port_cap1">غرفة فاخرة بألوان ناعمة + مكتب + رفوف</div>
-        </div>
-
-        <div class="bigshot">
-          <img src="assets/room-2.jpg" alt="غرفة وردية مميزة" />
-          <div class="bigshot__cap" data-i18n="port_cap2">تصميم متكامل + إضاءة + تفاصيل ديكور راقية</div>
-        </div>
-      </div>
-
-      <div class="center">
-        <a class="btn" href="#contact" data-i18n="portfolio_cta">بغيتي نفس الستايل؟ تواصل معنا</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section section--alt" id="contact">
-    <div class="container">
-      <div class="section__head">
-        <h2 data-i18n="contact_h2">اطلب عرض السعر</h2>
-        <p data-i18n="contact_p">عمر المعلومات وغادي نحيدو عليك الحيرة 👇</p>
-      </div>
-
-      <div class="contact">
-        <form class="form" id="quoteForm">
-          <div class="form__row">
-            <label data-i18n="form_name_label">الاسم</label>
-            <input required name="name" data-i18n-placeholder="form_name_ph" placeholder="مثال: Anouar" />
-          </div>
-
-          <div class="form__row">
-            <label data-i18n="form_city_label">المدينة</label>
-            <input required name="city" data-i18n-placeholder="form_city_ph" placeholder="مثال: Casablanca" />
-          </div>
-
-          <div class="form__row">
-            <label data-i18n="form_phone_label">رقم الهاتف</label>
-            <input required name="phone" data-i18n-placeholder="form_phone_ph" placeholder="06xxxxxxxx" />
-          </div>
-
-          <div class="form__row">
-            <label data-i18n="form_msg_label">شنو باغي؟</label>
-            <textarea required name="message" rows="4" data-i18n-placeholder="form_msg_ph" placeholder="نوع الموديل + القياسات + اللون..."></textarea>
-          </div>
-
-          <button class="btn" type="submit" data-i18n="form_submit">إرسال عبر واتساب</button>
-          <p class="form__note" data-i18n="form_note">كيتحل واتساب برسالة جاهزة.</p>
-        </form>
-
-        <div class="contact__side">
-          <div class="sidecard">
-            <h3 data-i18n="wa_title">واتساب مباشر</h3>
-            <p data-i18n-html="wa_p">بدّل الرقم فـ <b>script.js</b></p>
-            <a class="btn btn--ghost" id="waDirect" href="#" data-i18n="wa_open">فتح واتساب</a>
-          </div>
-
-          <div class="sidecard">
-            <h3 data-i18n="ig_title">إنستغرام</h3>
-            <p>@happy_child_universe</p>
-            <a class="link" href="https://www.instagram.com/happy_child_universe?igsh=dXhqNmhlaDdkdXRi" target="_blank" rel="noreferrer"><span data-i18n="ig_visit">زيارة الحساب</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer__row">
-      <span>© <span id="year"></span> Happy Child Universe</span>
-      <span class="muted" data-i18n="footer_muted">Real projects only</span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-
-  <div class="floating-social">
-    <a class="float whatsapp" id="waFloat" href="https://wa.me/212660609353?text=%D8%B3%D9%84%D8%A7%D9%85%20%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%85%D9%86%20Happy%20Child." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-    <a class="float instagram" href="https://www.instagram.com/happy_child_universe?igsh=dXhqNmhlaDdkdXRi" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a class="float facebook" href="https://www.facebook.com/share/17GgU48R9d/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-  </div>
-
+<article class="tile">
+<img alt="موديل غرفة بألوان ناعمة" src="assets/room-1.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_09_title">غرفة متكاملة (ستايل ناعم)</h3>
+<p data-i18n="model_09_desc">سرير + خزانة + مكتب بنفس الستايل.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="موديل غرفة وردية بإضاءة" src="assets/room-2.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_10_title">غرفة بإضاءة ديكور</h3>
+<p data-i18n="model_10_desc">تفاصيل راقية وإضاءة كتزيد جمال الغرفة.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="موديل خزانة تنظيم" src="assets/model-shelf.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_11_title">خزانة + رفوف تنظيم</h3>
+<p data-i18n="model_11_desc">حل ذكي للتخزين مع شكل كيعجب الأطفال.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="موديل ديكور house" src="assets/model-blue.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_12_title">ديكور House + رفوف</h3>
+<p data-i18n="model_12_desc">ستايل عصري للأطفال ولمسة ديكور فخمة.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- PORTFOLIO -->
+<section class="section" id="portfolio">
+<div class="container">
+<div class="section__head">
+<h2 data-i18n="portfolio_h2">أعمالنا</h2>
+<p data-i18n="portfolio_p">نماذج من غرف منجزة بلمسة Happy Child.</p>
+</div>
+<div class="grid2">
+<div class="bigshot">
+<img alt="غرفة وردية فاخرة" src="assets/room-1.jpg"/>
+<div class="bigshot__cap" data-i18n="port_cap1">غرفة فاخرة بألوان ناعمة + مكتب + رفوف</div>
+</div>
+<div class="bigshot">
+<img alt="غرفة وردية مميزة" src="assets/room-2.jpg"/>
+<div class="bigshot__cap" data-i18n="port_cap2">تصميم متكامل + إضاءة + تفاصيل ديكور راقية</div>
+</div>
+</div>
+<div class="center">
+<a class="btn" data-i18n="portfolio_cta" href="#contact">بغيتي نفس الستايل؟ تواصل معنا</a>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="section section--alt" id="contact">
+<div class="container">
+<div class="section__head">
+<h2 data-i18n="contact_h2">اطلب عرض السعر</h2>
+<p data-i18n="contact_p">عمر المعلومات وغادي نحيدو عليك الحيرة 👇</p>
+</div>
+<div class="contact">
+<form class="form" id="quoteForm">
+<div class="form__row">
+<label data-i18n="form_name_label">الاسم</label>
+<input data-i18n-placeholder="form_name_ph" name="name" placeholder="مثال: Anouar" required=""/>
+</div>
+<div class="form__row">
+<label data-i18n="form_city_label">المدينة</label>
+<input data-i18n-placeholder="form_city_ph" name="city" placeholder="مثال: Casablanca" required=""/>
+</div>
+<div class="form__row">
+<label data-i18n="form_phone_label">رقم الهاتف</label>
+<input data-i18n-placeholder="form_phone_ph" name="phone" placeholder="06xxxxxxxx" required=""/>
+</div>
+<div class="form__row">
+<label data-i18n="form_msg_label">شنو باغي؟</label>
+<textarea data-i18n-placeholder="form_msg_ph" name="message" placeholder="نوع الموديل + القياسات + اللون..." required="" rows="4"></textarea>
+</div>
+<button class="btn" data-i18n="form_submit" type="submit">إرسال عبر واتساب</button>
+<p class="form__note" data-i18n="form_note">كيتحل واتساب برسالة جاهزة.</p>
+</form>
+<div class="contact__side">
+<div class="sidecard">
+<h3 data-i18n="wa_title">واتساب مباشر</h3>
+<p data-i18n-html="wa_p">بدّل الرقم فـ <b>script.js</b></p>
+<a class="btn btn--ghost" data-i18n="wa_open" href="#" id="waDirect">فتح واتساب</a>
+</div>
+<div class="sidecard">
+<h3 data-i18n="ig_title">إنستغرام</h3>
+<p>@happy_child_universe</p>
+<a class="link" href="https://www.instagram.com/happy_child_universe?igsh=dXhqNmhlaDdkdXRi" rel="noreferrer" target="_blank"><span data-i18n="ig_visit">زيارة الحساب</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container footer__row">
+<span>© <span id="year"></span> Happy Child Universe</span>
+<span class="muted" data-i18n="footer_muted">Real projects only</span>
+</div>
+</footer>
+<script src="script.js"></script>
+<div class="floating-social">
+<a aria-label="WhatsApp" class="float whatsapp" href="https://wa.me/212660609353?text=%D8%B3%D9%84%D8%A7%D9%85%20%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%85%D9%86%20Happy%20Child." id="waFloat" rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a aria-label="Instagram" class="float instagram" href="https://www.instagram.com/happy_child_universe?igsh=dXhqNmhlaDdkdXRi" rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="Facebook" class="float facebook" href="https://www.facebook.com/share/17GgU48R9d/?mibextid=wwXIfr" rel="noopener" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+</div>
 </body>
 </html>
