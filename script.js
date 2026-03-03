@@ -1,3 +1,16 @@
+
+function initHeroSlider(){
+  const slides = document.querySelectorAll('#heroSlider .slide');
+  if(!slides || slides.length === 0) return;
+
+  let i = 0;
+  setInterval(() => {
+    slides[i].classList.remove('active');
+    i = (i + 1) % slides.length;
+    slides[i].classList.add('active');
+  }, 3500);
+}
+
 function ensureButtonsExist() {
   document.querySelectorAll('.tile, .card').forEach(card => {
     // If any button already exists inside card, don't add a second one
@@ -45,4 +58,5 @@ window.addEventListener('load', () => {
   });
 
   ensureButtonsExist();
+  initHeroSlider();
 });

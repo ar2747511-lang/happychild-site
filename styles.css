@@ -553,3 +553,17 @@ body.fr{
   display: block;
   position: relative;
 }
+
+
+/* Brand logo sizing */
+.brand__logo{height:44px;width:auto;border-radius:10px;}
+
+/* Hero slider (fade) */
+.hero-slider{position:relative;width:100%;max-width:560px;aspect-ratio:16/9;border-radius:22px;overflow:hidden;box-shadow:0 18px 50px rgba(31,41,55,.12);}
+.hero-slider .slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease;}
+.hero-slider .slide.active{opacity:1;}
+
+/* Ensure floating social does not overlap small screens */
+@media (max-width: 520px){
+  .floating-social{inset-inline-end:12px;inset-block-end:80px;}
+}
