@@ -31,6 +31,62 @@ const I18N = {
     svc3_p: "تركيب نظيف ومحترم للسلامة، ونتيجة فخمة.",
     models_h2: "موديلات من خدمتنا",
     models_p: "هاد الصور من مشاريع/موديلات Happy Child.",
+
+    newmodels_h2: "موديلات جديدة",
+    newmodels_p: "موديلات جديدة بتصاميم عصرية—اختار اللي عجبك واطلب عرض سعر.",
+
+    newmodels_h2: "Nouveaux modèles",
+    newmodels_p: "Nouveaux modèles au style moderne — choisissez et demandez un devis.",
+    model_order_btn: "Commander ce modèle",
+    new_01_title: "Lit Château",
+    new_01_desc: "Lit superposé style château — idéal pour frères/sœurs, rendu premium.",
+    new_02_title: "Lit superposé bois",
+    new_02_desc: "Superposé avec escaliers + tiroirs — pratique et gain de place.",
+    new_03_title: "Lit Maison Labubu",
+    new_03_desc: "Lit maison avec déco Labubu — style doux pour enfants.",
+    new_04_title: "Lit Maison Monster",
+    new_04_desc: "Lit maison avec éclairage + déco personnages — fun et unique.",
+    new_05_title: "Lit vert moderne",
+    new_05_desc: "Couleurs calmes, finition premium — avec décoration murale assortie.",
+    new_06_title: "Lit maison blanc",
+    new_06_desc: "Design maison blanc — simple, élégant et très enfantin.",
+    new_07_title: "Déco / parure Labubu",
+    new_07_desc: "Parure + détails déco dans le même thème pour un style complet.",
+    new_08_title: "Cadres muraux Labubu",
+    new_08_desc: "3 cadres assortis — pour compléter la déco de la chambre.",
+    wa_model_new_01: "Bonjour, je souhaite commander le modèle : Lit Château. Prix et dimensions SVP ?",
+    wa_model_new_02: "Bonjour, je souhaite commander le modèle : Lit superposé bois. Prix et dimensions SVP ?",
+    wa_model_new_03: "Bonjour, je souhaite commander le modèle : Lit Maison Labubu. Prix et dimensions SVP ?",
+    wa_model_new_04: "Bonjour, je souhaite commander le modèle : Lit Maison Monster. Prix et dimensions SVP ?",
+    wa_model_new_05: "Bonjour, je souhaite commander le modèle : Lit vert moderne. Prix et dimensions SVP ?",
+    wa_model_new_06: "Bonjour, je souhaite commander le modèle : Lit maison blanc. Prix et dimensions SVP ?",
+    wa_model_new_07: "Bonjour, je souhaite commander : Déco / parure Labubu. Détails SVP ?",
+    wa_model_new_08: "Bonjour, je souhaite commander : Cadres muraux Labubu. Détails SVP ?",
+    model_order_btn: "اطلب هذا الموديل",
+    new_01_title: "سرير القصر",
+    new_01_desc: "سرير طابقين ستايل قصر—مناسب للإخوة ويعطي منظر فخم.",
+    new_02_title: "سرير طابقين خشب",
+    new_02_desc: "طابقين مع درج تخزين—عملي وكيستغل المساحة مزيان.",
+    new_03_title: "سرير بيت لابوبو",
+    new_03_desc: "سرير بيت مع ديكور لابوبو—ستايل ناعم للأطفال.",
+    new_04_title: "سرير بيت مونستر",
+    new_04_desc: "سرير بيت بإضاءة وديكور شخصيات—مميز ومضحك للأطفال.",
+    new_05_title: "سرير أخضر مودرن",
+    new_05_desc: "ألوان هادئة وتشطيب راقي—كيجي مع ديكور جداري لطيف.",
+    new_06_title: "سرير بيت أبيض",
+    new_06_desc: "تصميم بيت أبيض—بساطة وأناقة مع لمسات طفولية.",
+    new_07_title: "ديكور/مفرش لابوبو",
+    new_07_desc: "مفرش + تفاصيل ديكور بنفس الثيم باش يجي ستايل كامل.",
+    new_08_title: "لوحات حائط لابوبو",
+    new_08_desc: "3 لوحات متناسقة—كتكمل ديكور الغرفة بشكل زوين.",
+    wa_model_new_01: "سلام، بغيت نطلب موديل: سرير القصر. ممكن الثمن والقياسات؟",
+    wa_model_new_02: "سلام، بغيت نطلب موديل: سرير طابقين خشب. ممكن الثمن والقياسات؟",
+    wa_model_new_03: "سلام، بغيت نطلب موديل: سرير بيت لابوبو. ممكن الثمن والقياسات؟",
+    wa_model_new_04: "سلام، بغيت نطلب موديل: سرير بيت مونستر. ممكن الثمن والقياسات؟",
+    wa_model_new_05: "سلام، بغيت نطلب موديل: سرير أخضر مودرن. ممكن الثمن والقياسات؟",
+    wa_model_new_06: "سلام، بغيت نطلب موديل: سرير بيت أبيض. ممكن الثمن والقياسات؟",
+    wa_model_new_07: "سلام، بغيت نطلب موديل: ديكور/مفرش لابوبو. ممكن التفاصيل؟",
+    wa_model_new_08: "سلام، بغيت نطلب موديل: لوحات حائط لابوبو. ممكن التفاصيل؟",
     model_01_title: "غرفة الأرنب",
     model_01_desc: "موديل سرير أرنب بتفاصيل ناعمة وتشطيب راقي.",
     model_02_title: "غرفة ميكي",
@@ -213,6 +269,14 @@ function applyI18n(lang){
   const waFloat = document.getElementById("waFloat");
   if(waDirect) waDirect.href = waLink(dict.wa_direct_msg);
   if(waFloat) waFloat.href = waLink(dict.wa_float_msg);
+
+  // Model buttons (new section)
+  document.querySelectorAll("[data-wa-model]").forEach(a => {
+    const key = a.getAttribute("data-wa-model");
+    const msgKey = `wa_model_${key}`;
+    if(dict[msgKey]) a.href = waLink(dict[msgKey]);
+    else a.href = waLink(dict.wa_direct_msg);
+  });
 
   // Update submit behavior template in form handler
   window.__HC_LANG = lang;
