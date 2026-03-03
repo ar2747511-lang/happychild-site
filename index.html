@@ -1,166 +1,243 @@
 <!doctype html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Happy Child Universe — Chambres d’enfants sur mesure</title>
-  <meta name="description" content="Conception et fabrication de chambres d’enfants sur mesure : design premium, finitions soignées, installation professionnelle." />
+  <title>Happy Child Universe | عالم الطفل السعيد</title>
+  <meta name="description" content="تصميم وتنفيذ غرف أطفال فاخرة حسب الطلب | 3D قبل التنفيذ | تصنيع وتركيب احترافي" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <div class="brand">
-        <img src="assets/logo.jpg" alt="Happy Child Universe" class="brand__logo" />
-        <div class="brand__text">
-          <div class="brand__name">Happy Child Universe</div>
-          <div class="brand__tagline">Chambres d’enfants sur mesure</div>
-        </div>
-      </div>
 
-      <nav class="topbar__nav">
-        <a class="topbar__link" href="#galerie">Galerie</a>
-        <a class="topbar__link" href="#methode">Méthode</a>
-        <a class="topbar__link" href="#devis">Devis</a>
-        <a class="topbar__cta" id="waTop" href="#">WhatsApp</a>
+  <div class="topbar">
+    <div class="container topbar__row">
+      <span class="topbar__hint">✨ Votre espace où l’imagination prend vie</span>
+      <a class="topbar__link" href="#contact">اطلب عرض السعر</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__row">
+      <a class="brand" href="#">
+        <img class="brand__logo" src="assets/logo.jpg" alt="Happy Child Logo" />
+        <div class="brand__text">
+          <strong>Happy Child</strong>
+          <span>عالم الطفل السعيد</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#services">الخدمات</a>
+        <a href="#models">الموديلات</a>
+        <a href="#portfolio">أعمالنا</a>
+        <a href="#contact" class="btn btn--small">تواصل معنا</a>
       </nav>
+
+      <button class="burger" id="burger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <h1>Des chambres d’enfants uniques, pensées pour durer.</h1>
-          <p>
-            Conception • Fabrication sur mesure • Finitions premium • Installation professionnelle.
-          </p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="badge">تصميم • تصنيع • تركيب</p>
+        <h1>نصمّم غرف أطفال <span class="accent">راقية وناعمة</span> حسب الطلب</h1>
+        <p class="lead">
+          كنخدمو غير بالموديلات اللي كنصايبوهم فعلاً.  
+          تصميم 3D قبل التنفيذ + جودة عالية + تركيب احترافي.
+        </p>
 
-          <div class="hero__actions">
-            <a class="btn btn--primary" id="waHero" href="#">Demander un devis sur WhatsApp</a>
-            <a class="btn btn--ghost" href="#galerie">Voir la galerie</a>
-          </div>
-
-          <div class="hero__badges">
-            <span class="badge">Sur mesure</span>
-            <span class="badge">Design premium</span>
-            <span class="badge">Installation pro</span>
-          </div>
+        <div class="hero__cta">
+          <a class="btn" href="#contact">اطلب تصميمك الآن</a>
+          <a class="btn btn--ghost" href="#portfolio">شوف الأعمال</a>
         </div>
 
-        <div class="hero__media">
-          <img src="assets/hero.jpg" alt="Chambre enfant — exemple" class="hero__image" />
+        <div class="trust">
+          <div class="trust__item">✅ موديلات حقيقية</div>
+          <div class="trust__item">✅ تشطيب راقي</div>
+          <div class="trust__item">✅ خدمة 3D</div>
         </div>
       </div>
-    </section>
 
-    <section class="section" id="methode">
-      <div class="container">
-        <h2>Notre méthode</h2>
-        <p class="muted">De l’idée à l’installation — simple, clair, efficace.</p>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step__num">1</div>
-            <div class="step__title">Brief & inspiration</div>
-            <div class="step__text">Vous nous envoyez des photos / idées + dimensions.</div>
-          </div>
-          <div class="step">
-            <div class="step__num">2</div>
-            <div class="step__title">Proposition</div>
-            <div class="step__text">Nous préparons une proposition (style, couleurs, options).</div>
-          </div>
-          <div class="step">
-            <div class="step__num">3</div>
-            <div class="step__title">Fabrication</div>
-            <div class="step__text">Fabrication soignée avec matériaux adaptés aux enfants.</div>
-          </div>
-          <div class="step">
-            <div class="step__num">4</div>
-            <div class="step__title">Installation</div>
-            <div class="step__text">Installation professionnelle + vérifications finales.</div>
-          </div>
+      <div class="hero__media">
+        <img src="assets/hero.jpg" alt="مشروع Happy Child" />
+        <div class="hero__card">
+          <strong>3D قبل التنفيذ</strong>
+          <span>باش تشوف النتيجة قبل ما نبداو الخدمة</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="galerie">
-      <div class="container">
-        <h2>Galerie</h2>
-        <p class="muted">Quelques inspirations (vous pouvez changer le style et les couleurs).</p>
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <h2>الخدمات ديالنا</h2>
+        <p>من الفكرة حتى التركيب… كلشي عندنا.</p>
+      </div>
 
-        <div class="gallery">
-          <img src="assets/img1.jpg" alt="Inspiration 1" loading="lazy" />
-          <img src="assets/img2.jpg" alt="Inspiration 2" loading="lazy" />
-          <img src="assets/img3.jpg" alt="Inspiration 3" loading="lazy" />
-          <img src="assets/img4.jpg" alt="Inspiration 4" loading="lazy" />
-          <img src="assets/img5.jpg" alt="Inspiration 5" loading="lazy" />
-          <img src="assets/img6.jpg" alt="Inspiration 6" loading="lazy" />
-          <img src="assets/img7.jpg" alt="Inspiration 7" loading="lazy" />
+      <div class="grid3">
+        <div class="card">
+          <h3>تصميم 3D</h3>
+          <p>كنصايبو تصور شامل للغرفة باش تكون مطمّن قبل التنفيذ.</p>
+        </div>
+        <div class="card">
+          <h3>تصنيع حسب القياس</h3>
+          <p>أسِرّة، خزانات، مكاتب، ديكور جداري… حسب المساحة والستايل.</p>
+        </div>
+        <div class="card">
+          <h3>تركيب احترافي</h3>
+          <p>تركيب نظيف ومحترم للسلامة، ونتيجة فخمة.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section section--soft" id="devis">
-      <div class="container">
-        <h2>Demander un devis</h2>
-        <p class="muted">Remplissez ce formulaire (ça envoie directement sur WhatsApp).</p>
+  <!-- MODELS -->
+  <section class="section section--alt" id="models">
+    <div class="container">
+      <div class="section__head">
+        <h2>موديلات من خدمتنا</h2>
+        <p>هاد الصور من مشاريع/موديلات Happy Child.</p>
+      </div>
 
+      <div class="grid4">
+        <article class="tile">
+          <img src="assets/model-green.jpg" alt="سرير أخضر ستايل ناعم" />
+          <div class="tile__body">
+            <h3>سرير ستايل ناعم</h3>
+            <p>ألوان دافئة + راحة + تفاصيل راقية.</p>
+          </div>
+        </article>
+
+        <article class="tile">
+          <img src="assets/model-blue.jpg" alt="ستايل البيت مع إضاءة" />
+          <div class="tile__body">
+            <h3>ستايل البيت بإضاءة</h3>
+            <p>ديكور house مع لمسة مضيئة ساحرة.</p>
+          </div>
+        </article>
+
+        <article class="tile">
+          <img src="assets/model-shelf.jpg" alt="خزانة شكل دار" />
+          <div class="tile__body">
+            <h3>خزانة شكل دار</h3>
+            <p>تنظيم + شكل جميل للأطفال.</p>
+          </div>
+        </article>
+
+        <article class="tile">
+          <img src="assets/model-map.jpg" alt="مكتب + ديكور خريطة" />
+          <div class="tile__body">
+            <h3>مكتب + ديكور جداري</h3>
+            <p>حل عملي للدراسة بستايل عصري.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section__head">
+        <h2>أعمالنا</h2>
+        <p>نماذج من غرف منجزة بلمسة Happy Child.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="bigshot">
+          <img src="assets/room-1.jpg" alt="غرفة وردية فاخرة" />
+          <div class="bigshot__cap">غرفة فاخرة بألوان ناعمة + مكتب + رفوف</div>
+        </div>
+
+        <div class="bigshot">
+          <img src="assets/room-2.jpg" alt="غرفة وردية مميزة" />
+          <div class="bigshot__cap">تصميم متكامل + إضاءة + تفاصيل ديكور راقية</div>
+        </div>
+      </div>
+
+      <div class="center">
+        <a class="btn" href="#contact">بغيتي نفس الستايل؟ تواصل معنا</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <h2>اطلب عرض السعر</h2>
+        <p>عمر المعلومات وغادي نحيدو عليك الحيرة 👇</p>
+      </div>
+
+      <div class="contact">
         <form class="form" id="quoteForm">
-          <div class="form__grid">
-            <label class="field">
-              <span>Nom</span>
-              <input type="text" name="name" placeholder="Votre nom" required />
-            </label>
-
-            <label class="field">
-              <span>Ville</span>
-              <input type="text" name="city" placeholder="Ex: Casablanca" />
-            </label>
-
-            <label class="field">
-              <span>Téléphone</span>
-              <input type="tel" name="phone" placeholder="Ex: +212..." />
-            </label>
-
-            <label class="field field--full">
-              <span>Votre demande</span>
-              <textarea name="message" rows="4" placeholder="Dimensions, style, couleurs, deadline..." required></textarea>
-            </label>
+          <div class="form__row">
+            <label>الاسم</label>
+            <input required name="name" placeholder="مثال: Anouar" />
           </div>
 
-          <div class="form__actions">
-            <button class="btn btn--primary" type="submit">Envoyer sur WhatsApp</button>
-            <a class="btn btn--ghost" id="waDirect" href="#">Écrire directement</a>
+          <div class="form__row">
+            <label>المدينة</label>
+            <input required name="city" placeholder="مثال: Casablanca" />
           </div>
+
+          <div class="form__row">
+            <label>رقم الهاتف</label>
+            <input required name="phone" placeholder="06xxxxxxxx" />
+          </div>
+
+          <div class="form__row">
+            <label>شنو باغي؟</label>
+            <textarea required name="message" rows="4" placeholder="نوع الموديل + القياسات + اللون..."></textarea>
+          </div>
+
+          <button class="btn" type="submit">إرسال عبر واتساب</button>
+          <p class="form__note">كيتحل واتساب برسالة جاهزة.</p>
         </form>
 
-        <div class="note">
-          <strong>Astuce :</strong> si vous avez des photos (inspirations), envoyez-les sur WhatsApp après l’envoi du message.
+        <div class="contact__side">
+          <div class="sidecard">
+            <h3>واتساب مباشر</h3>
+            <p>بدّل الرقم فـ <b>script.js</b></p>
+            <a class="btn btn--ghost" id="waDirect" href="#">فتح واتساب</a>
+          </div>
+
+          <div class="sidecard">
+            <h3>إنستغرام</h3>
+            <p>@happy_child_universe</p>
+            <a class="link" href="https://www.instagram.com/happy_child_universe?igsh=dXhqNmhlaDdkdXRi" target="_blank" rel="noreferrer">زيارة الحساب</a>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer class="footer">
-    <div class="container footer__grid">
-      <div>
-        <div class="footer__brand">Happy Child Universe</div>
-        <div class="muted">Chambres d’enfants sur mesure • Maroc</div>
-      </div>
-
-      <div class="footer__links">
-        <a id="igLink" href="#" target="_blank" rel="noreferrer">Instagram</a>
-        <a id="fbLink" href="#" target="_blank" rel="noreferrer">Facebook</a>
-        <a id="waFooter" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
-      </div>
+    <div class="container footer__row">
+      <span>© <span id="year"></span> Happy Child Universe</span>
+      <span class="muted">Real projects only</span>
     </div>
   </footer>
 
   <script src="script.js"></script>
+
+  <div class="floating-social">
+    <a class="float whatsapp" href="https://wa.me/212660609353?text=%D8%B3%D9%84%D8%A7%D9%85%20%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B7%D9%84%D8%A8%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%85%D9%86%20Happy%20Child." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a class="float instagram" href="https://www.instagram.com/happy_child_universe?igsh=dXhqNmhlaDdkdXRi" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="float facebook" href="https://www.facebook.com/share/17GgU48R9d/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+  </div>
+
 </body>
 </html>
