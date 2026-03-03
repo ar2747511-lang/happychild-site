@@ -365,3 +365,7 @@ body.fr{
 .model-btn:hover{
   transform: translateY(-2px);
 }
+
+.lang-ar{display:none !important;}
+
+.lang-fr{display:inline !important;}
