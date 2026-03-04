@@ -672,3 +672,26 @@ body.fr{
   .header-social{margin-inline-start:8px;}
   .header-social .hs{width:36px;height:36px;border-radius:12px;}
 }
+
+
+/* --- Store / Orders --- */
+.model-btn{ display:inline-block; margin:12px 14px 14px; padding:10px 14px; border-radius:10px; text-align:center; font-weight:700; }
+.order-form{ max-width:720px; background:rgba(255,255,255,.85); border:1px solid rgba(0,0,0,.08); border-radius:14px; padding:16px; }
+.order-form label{ display:block; font-weight:700; margin:10px 0; }
+.order-form input, .order-form textarea{
+  width:100%; margin-top:6px; padding:12px 12px; border-radius:10px; border:1px solid rgba(0,0,0,.18);
+  font:inherit;
+}
+.order-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; }
+@media (max-width: 820px){ .order-grid{ grid-template-columns:1fr; } }
+.form-status{ margin-top:10px; font-weight:700; }
+.form-status.ok{ color: #0a7a2a; }
+.form-status.err{ color: #b00020; }
+.cardish{ border:1px solid rgba(0,0,0,.08); border-radius:14px; padding:16px; background:rgba(255,255,255,.85); max-width:720px; }
+.table-wrap{ overflow:auto; border:1px solid rgba(0,0,0,.08); border-radius:14px; background:#fff; }
+table.orders{ width:100%; border-collapse:collapse; min-width:860px; }
+table.orders th, table.orders td{ padding:10px 12px; border-bottom:1px solid rgba(0,0,0,.08); text-align:left; vertical-align:top; }
+table.orders th{ background:rgba(0,0,0,.03); position:sticky; top:0; }
+.btn.small, .btn.btn--small{ padding:8px 10px; border-radius:10px; }
+.btn.danger{ background:#b00020; color:#fff; border:none; }
+.admin-bar{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin:12px 0; }

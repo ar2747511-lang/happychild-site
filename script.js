@@ -31,13 +31,13 @@ function ensureButtonsExist() {
 
     const btn = document.createElement('a');
     btn.className = 'model-btn';
-    btn.target = '_blank';
-    btn.rel = 'noopener';
+    btn.removeAttribute('target');
+    btn.removeAttribute('rel');
 
-    const msg = encodeURIComponent('Bonjour, je veux commander le modèle: ' + title);
-    btn.href = 'https://wa.me/212660609353?text=' + msg;
+    const p = encodeURIComponent(title);
+    btn.href = 'order.html?product=' + p;
 
-    btn.textContent = 'Commander ce modèle';
+    btn.textContent = 'Commander';
     card.appendChild(btn);
   });
 }

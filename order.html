@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Commander | Happy Child Universe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page page--order">
+  <header class="header">
+    <div class="container header__row">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/logo.png" alt="Happy Child Universe">
+        <div class="brand__text"><strong>Happy Child</strong><span>Universe de l’enfant heureux</span></div>
+      </a>
+      <nav class="nav">
+        <a href="index.html#models">Modèles</a>
+        <a href="index.html#portfolio">Réalisations</a>
+        <a class="btn btn--small" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Commande</h2>
+        <p>Remplissez ce formulaire. Votre commande va apparaître مباشرة في لوحة الطلبات.</p>
+      </div>
+
+      <form id="orderForm" class="order-form">
+        <label>
+          Produit / Modèle
+          <input id="product" name="product" type="text" required placeholder="Chambre Mickey..." />
+        </label>
+
+        <div class="order-grid">
+          <label>
+            Nom
+            <input name="name" type="text" required placeholder="Votre nom" />
+          </label>
+          <label>
+            Téléphone
+            <input name="phone" type="tel" required placeholder="+212..." />
+          </label>
+          <label>
+            Ville
+            <input name="city" type="text" placeholder="Casablanca..." />
+          </label>
+        </div>
+
+        <label>
+          Notes
+          <textarea name="notes" rows="4" placeholder="Couleur, dimensions, ..."></textarea>
+        </label>
+
+        <button class="btn" type="submit">Envoyer la commande</button>
+        <div id="orderStatus" class="form-status" aria-live="polite"></div>
+      </form>
+
+      <p class="muted" style="margin-top:14px">
+        Admin: <a href="admin.html">لوحة الطلبات</a>
+      </p>
+    </div>
+  </main>
+
+  <script type="module" src="js/order.js"></script>
+</body>
+</html>
