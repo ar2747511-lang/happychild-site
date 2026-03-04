@@ -1,73 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>لوحة الطلبات | Happy Child Universe</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin | Happy Child</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page page--admin">
-  <header class="header">
-    <div class="container header__row">
-      <a class="brand" href="index.html">
-        <img class="brand__logo" src="assets/logo.png" alt="Happy Child Universe">
-        <div class="brand__text"><strong>Happy Child</strong><span>Universe de l’enfant heureux</span></div>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Site</a>
-        <a href="order.html">Nouvelle commande</a>
-      </nav>
-    </div>
-  </header>
+<body>
 
-  <main class="section">
-    <div class="container">
-      <div class="section__head">
-        <h2>لوحة الطلبات (Admin)</h2>
-        <p class="muted">محميّة بتسجيل الدخول (Firebase Auth).</p>
-      </div>
+  <h2>Admin Dashboard</h2>
 
-      <section id="loginBox" class="cardish">
-        <h3>تسجيل الدخول</h3>
-        <form id="loginForm" class="order-form">
-          <label>Email
-            <input name="email" type="email" required placeholder="admin@email.com" />
-          </label>
-          <label>Password
-            <input name="password" type="password" required />
-          </label>
-          <button class="btn" type="submit">Login</button>
-          <div id="adminStatus" class="form-status" aria-live="polite"></div>
-        </form>
-      </section>
+  <div id="loginBox">
+    <p><b>Login</b></p>
+    <input id="adminEmail" type="email" placeholder="Email" />
+    <input id="adminPass" type="password" placeholder="Password" />
+    <button id="btnLogin">Login</button>
+    <p id="loginMsg"></p>
+  </div>
 
-      <section id="appBox" hidden>
-        <div class="admin-bar">
-          <button id="logoutBtn" class="btn btn--small">Logout</button>
-          <div id="adminStatus" class="muted"></div>
-        </div>
-
-        <div class="table-wrap">
-          <table class="orders">
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Produit</th>
-                <th>Nom</th>
-                <th>Téléphone</th>
-                <th>Ville</th>
-                <th>Status</th>
-                <th>Notes</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody id="ordersBody"></tbody>
-          </table>
-        </div>
-      </section>
-
-    </div>
-  </main>
+  <div id="adminPanel" style="display:none;">
+    <button id="btnLogout">Logout</button>
+    <h3>Orders</h3>
+    <div id="ordersList">Loading...</div>
+  </div>
 
   <script type="module" src="js/admin.js"></script>
 </body>
