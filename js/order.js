@@ -17,23 +17,19 @@ form.addEventListener("submit", async (e) => {
 
 e.preventDefault();
 
-const product = document.getElementById("product").value;
 const name = document.getElementById("name").value;
 const phone = document.getElementById("phone").value;
 const city = document.getElementById("city").value;
 const address = document.getElementById("address").value;
-const notes = document.getElementById("notes").value;
 
 try {
 
 await addDoc(collection(db, "orders"), {
 
-product: product,
 name: name,
 phone: phone,
 city: city,
 address: address,
-notes: notes,
 date: new Date()
 
 });
