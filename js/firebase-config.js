@@ -2,10 +2,10 @@
 // 2) Add a Web App and copy the config object below.
 // 3) Paste it between the braces.
 export const firebaseConfig = {
-  apiKey: "PASTE_HERE",
-  authDomain: "PASTE_HERE",
-  projectId: "PASTE_HERE",
-  storageBucket: "PASTE_HERE",
-  messagingSenderId: "PASTE_HERE",
-  appId: "PASTE_HERE"
+ apiKey: "AIzaSyCEITsi736SdHkZKpcaUVCvXgp5-Fd-s2E",
+  authDomain: "happychild-orders.firebaseapp.com",
+  projectId: "happychild-orders",
+  storageBucket: "happychild-orders.firebasestorage.app",
+  messagingSenderId: "902705815946",
+  appId: "1:902705815946:web:933764455a820464046873",
 };
