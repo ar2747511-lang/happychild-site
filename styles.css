@@ -630,7 +630,7 @@ body.fr{
 }
 
 /* If another old whatsapp button exists, hide it to avoid duplicates */
-
+.whatsapp-float{ display:none !important; }
 
 
 /* Header social icons (always visible on mobile + desktop) */
@@ -672,7 +672,3 @@ body.fr{
   .header-social{margin-inline-start:8px;}
   .header-social .hs{width:36px;height:36px;border-radius:12px;}
 }
-
-.floating-social{position:fixed;right:22px;bottom:22px;z-index:60}
-.floating-social .float{width:72px;height:72px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,.25)}
-.floating-social .float img{width:34px;height:34px}
