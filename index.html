@@ -1,23 +1,404 @@
-
 <!DOCTYPE html>
-<html>
+
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Happy Child Universe</title>
-<link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Happy Child Universe | Chambres d'enfants sur mesure</title>
+<meta content="Chambres d’enfants sur mesure et haut de gamme : conception 3D, fabrication premium, installation professionnelle au Maroc." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" rel="stylesheet"/>
 </head>
-<body>
-
-<header>
-<img src="assets/logo.png" style="height:60px">
+<body class="fr" dir="ltr">
+<div class="topbar">
+<div class="container topbar__row">
+<span class="topbar__hint" data-i18n="topbar_hint">✨ Votre espace où l’imagination prend vie</span>
+<a class="topbar__link" data-i18n="topbar_cta" href="#contact">اطلب عرض السعر</a>
+</div>
+</div>
+<header class="header">
+<div class="container header__row">
+<a class="brand" href="#"><img class="brand__logo" src="assets/logo.png" alt="Happy Child Universe"><div class="brand__text"><strong>Happy Child</strong><span>Universe de l’enfant heureux</span></div></a>
+<nav class="nav" id="nav">
+<a href="#services">Services</a>
+<a href="#models">Modèles</a>
+<a href="#portfolio">Réalisations</a>
+<a class="btn btn--small" href="#contact">Contact</a>
+</nav>
+<button aria-label="menu" class="burger" id="burger">
+<span></span><span></span><span></span>
+</button>
+</div>
 </header>
+<section class="hero-company">
+<div class="hero-left">
+<h1>Chambres d’Enfants Sur Mesure &amp; Haut de Gamme</h1>
+<p>Design personnalisé – Fabrication premium – Installation professionnelle.</p>
+<div class="hero-buttons">
+<a class="btn-primary" href="https://wa.me/212660609353" target="_blank">
+        Demander un devis
+      </a>
+<a class="btn-secondary" href="#models">
+        Voir nos modèles
+      </a>
+</div>
+<div class="hero-stats">
+<div><strong>+120</strong><span>Clients satisfaits</span></div>
+<div><strong>100%</strong><span>Sur mesure</span></div>
+<div><strong>5★</strong><span>Satisfaction</span></div>
+</div>
+</div>
+<div class="hero-right"><div class="hero-slider" id="heroSlider" id="heroSlider"><img alt="Réalisation 1" class="slide active" src="assets/hero1.jpg"/><img alt="Réalisation 2" class="slide" src="assets/hero2.jpg"/><img alt="Réalisation 3" class="slide" src="assets/hero3.jpg"/></div></div>
+</section>
+<section class="avis-section">
+<h2>Ce que disent nos clients</h2>
+<div class="avis-grid">
+<div class="avis-card">
+<div class="stars">★★★★★</div>
+<p>Service exceptionnel, qualité incroyable et installation rapide.</p>
+<span>- Sara M.</span>
+</div>
+<div class="avis-card">
+<div class="stars">★★★★★</div>
+<p>Très satisfait du résultat, chambre magnifique pour mon fils.</p>
+<span>- Yassine B.</span>
+</div>
+<div class="avis-card">
+<div class="stars">★★★★★</div>
+<p>Entreprise sérieuse et très professionnelle. Je recommande.</p>
+<span>- Nadia L.</span>
+</div>
+</div>
+</section>
+<!-- HERO -->
+<section class="hero">
+<div class="container hero__grid">
+<div class="hero__content">
+<p class="badge" data-i18n="hero_badge">تصميم • تصنيع • تركيب</p>
+<h1 data-i18n-html="hero_h1">نصمّم غرف أطفال <span class="accent">راقية وناعمة</span> حسب الطلب</h1>
+<p class="lead" data-i18n-html="hero_lead">
+          كنخدمو غير بالموديلات اللي كنصايبوهم فعلاً.  
+          تصميم 3D قبل التنفيذ + جودة عالية + تركيب احترافي.
+        </p>
+<div class="hero__cta">
+<a class="btn" data-i18n="hero_cta_primary" href="#contact">اطلب تصميمك الآن</a>
+<a class="btn btn--ghost" data-i18n="hero_cta_secondary" href="#portfolio">شوف الأعمال</a>
+</div>
+<div class="trust">
+<div class="trust__item" data-i18n="trust_1">✅ موديلات حقيقية</div>
+<div class="trust__item" data-i18n="trust_2">✅ تشطيب راقي</div>
+<div class="trust__item" data-i18n="trust_3">✅ خدمة 3D</div>
+</div>
+</div>
+<div class="hero__media">
+<img alt="مشروع &lt;img src=" assets="" logo.png"="" style="height:50px;"/>" src="assets/hero.jpg"/&gt;
+<div class="hero__card">
+<strong data-i18n="hero_card_title">3D قبل التنفيذ</strong>
+<span data-i18n="hero_card_sub">باش تشوف النتيجة قبل ما نبداو الخدمة</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES -->
+<section class="section" id="services">
+<div class="container">
+<div class="section__head">
+<h2 data-i18n="services_h2">الخدمات ديالنا</h2>
+<p data-i18n="services_p">من الفكرة حتى التركيب… كلشي عندنا.</p>
+</div>
+<div class="grid3">
+<div class="card">
+<h3 data-i18n="svc1_h3">تصميم 3D</h3>
+<p data-i18n="svc1_p">كنصايبو تصور شامل للغرفة باش تكون مطمّن قبل التنفيذ.</p>
+</div>
+<div class="card">
+<h3 data-i18n="svc2_h3">تصنيع حسب القياس</h3>
+<p data-i18n="svc2_p">أسِرّة، خزانات، مكاتب، ديكور جداري… حسب المساحة والستايل.</p>
+</div>
+<div class="card">
+<h3 data-i18n="svc3_h3">تركيب احترافي</h3>
+<p data-i18n="svc3_p">تركيب نظيف ومحترم للسلامة، ونتيجة فخمة.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- MODELS -->
+<section class="section section--alt" id="models">
+<div class="container">
+<div class="section__head">
+<h2 data-i18n="models_h2">موديلات من خدمتنا</h2>
+<p data-i18n="models_p">هاد الصور من مشاريع/موديلات <img class="brand__logo" src="assets/logo.png" alt="Happy Child Universe">.</p>
+</div>
+<div class="grid4">
+<article class="tile">
+<img alt="Chambre Lapinou" src="assets/model-lapinou.jpg">
+<div class="tile__body">
+<h3 data-i18n="model_01_title">Chambre Lapinou</h3>
+<p data-i18n="model_01_desc">موديل سرير أرنب بتفاصيل ناعمة وتشطيب راقي.</p>
+</div>
+</img></article>
+<article class="tile">
+<img alt="Chambre Mickey" src="assets/model-mickey.jpg">
+<div class="tile__body">
+<h3 data-i18n="model_02_title">Chambre Mickey</h3>
+<p data-i18n="model_02_desc">موديل سرير ميكي (ستايل هادئ) مع إمكانيات تخصيص.</p>
+</div>
+</img></article>
+<article class="tile">
+<img alt="Chambre Bubbly" src="assets/model-bubbly.jpg">
+<div class="tile__body">
+<h3 data-i18n="model_03_title">Chambre Bubbly</h3>
+<p data-i18n="model_03_desc">موديل سرير ستايل سحابة بألوان منعشة.</p>
+</div>
+</img></article>
+<article class="tile">
+<img alt="Lit Maison" src="assets/model-housebed.jpg">
+<div class="tile__body">
+<h3 data-i18n="model_04_title">Lit Maison</h3>
+<p data-i18n="model_04_desc">موديل سرير على شكل بيت مع درج/سلم عملي.</p>
+</div>
+</img></article>
+<article class="tile">
+<img alt="سرير أخضر ستايل ناعم" src="assets/model-green.jpg">
+<div class="tile__body">
+<h3 data-i18n="model_05_title">سرير ستايل ناعم</h3>
+<p data-i18n="model_05_desc">ألوان دافئة + راحة + تفاصيل راقية.</p>
+</div>
+</img></article>
+<article class="tile">
+<img alt="ستايل البيت مع إضاءة" src="assets/model-blue.jpg">
+<div class="tile__body">
+<h3 data-i18n="model_06_title">ستايل البيت بإضاءة</h3>
+<p data-i18n="model_06_desc">ديكور house مع لمسة مضيئة ساحرة.</p>
+</div>
+</img></article>
+<article class="tile">
+<img alt="خزانة شكل دار" src="assets/model-shelf.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_07_title">خزانة شكل دار</h3>
+<p data-i18n="model_07_desc">تنظيم + شكل جميل للأطفال.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="مكتب + ديكور خريطة" src="assets/model-map.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_08_title">مكتب + ديكور جداري</h3>
+<p data-i18n="model_08_desc">حل عملي للدراسة بستايل عصري.</p>
+</div>
+</article>
+<!--
+          ✅ باش تزيد موديل جديد:
+          1) زِد الصورة فـ assets (مثال: assets/model-5.jpg)
+          2) كوپي هاد البلوك وبدّل src + العنوان + الوصف
+        -->
+<article class="tile">
+<img alt="موديل غرفة بألوان ناعمة" src="assets/room-1.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_09_title">غرفة متكاملة (ستايل ناعم)</h3>
+<p data-i18n="model_09_desc">سرير + خزانة + مكتب بنفس الستايل.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="موديل غرفة وردية بإضاءة" src="assets/room-2.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_10_title">غرفة بإضاءة ديكور</h3>
+<p data-i18n="model_10_desc">تفاصيل راقية وإضاءة كتزيد جمال الغرفة.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="موديل خزانة تنظيم" src="assets/model-shelf.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_11_title">خزانة + رفوف تنظيم</h3>
+<p data-i18n="model_11_desc">حل ذكي للتخزين مع شكل كيعجب الأطفال.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="موديل ديكور house" src="assets/model-blue.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="model_12_title">ديكور House + رفوف</h3>
+<p data-i18n="model_12_desc">ستايل عصري للأطفال ولمسة ديكور فخمة.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- PORTFOLIO -->
+<section --="" <!--="" class="section" models="" new="">
+<section class="section section--alt" id="new-models">
+<div class="container">
+<div class="section__head">
+<h2 data-i18n="newmodels_h2">موديلات جديدة</h2>
+<p data-i18n="newmodels_p">أفكار جديدة بتصاميم عصرية—اختار اللي عجبك واطلب عرض سعر.</p>
+</div>
+<div class="grid4">
+<article class="tile">
+<img alt="Lit Château" src="assets/new-castle.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="new_01_title">سرير القصر</h3>
+<p data-i18n="new_01_desc">سرير طابقين ستايل قصر—مناسب للإخوة ويعطي منظر فخم.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="Lit Superposé Bois" src="assets/new-bunk-wood.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="new_02_title">سرير طابقين خشب</h3>
+<p data-i18n="new_02_desc">طابقين مع درج تخزين—عملي وكيستغل المساحة مزيان.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="Lit Maison Labubu" src="assets/new-maison-labubu.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="new_03_title">سرير بيت لابوبو</h3>
+<p data-i18n="new_03_desc">سرير بيت مع ديكور لابوبو—ستايل ناعم للأطفال.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="Lit Maison Monster" src="assets/new-maison-monster.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="new_04_title">سرير بيت مونستر</h3>
+<p data-i18n="new_04_desc">سرير بيت بإضاءة وديكور شخصيات—مميز ومضحك للأطفال.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="Lit Vert Moderne" src="assets/new-green-bed.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="new_05_title">سرير أخضر مودرن</h3>
+<p data-i18n="new_05_desc">ألوان هادئة وتشطيب راقي—كيجي مع ديكور جداري لطيف.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="Lit Maison Blanc" src="assets/new-white-house.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="new_06_title">سرير بيت أبيض</h3>
+<p data-i18n="new_06_desc">تصميم بيت أبيض—بساطة وأناقة مع لمسات طفولية.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="Parure Labubu" src="assets/new-labubu-pillow.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="new_07_title">ديكور/مفرش لابوبو</h3>
+<p data-i18n="new_07_desc">مفرش + تفاصيل ديكور بنفس الثيم باش يجي ستايل كامل.</p>
+</div>
+</article>
+<article class="tile">
+<img alt="Cadres Labubu" src="assets/new-labubu-frames.jpg"/>
+<div class="tile__body">
+<h3 data-i18n="new_08_title">لوحات حائط لابوبو</h3>
+<p data-i18n="new_08_desc">3 لوحات متناسقة—كتكمل ديكور الغرفة بشكل زوين.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
 
-<div class="hero">
-<img src="assets/hero1.jpg">
+id="portfolio"&gt;
+<div class="container">
+<div class="section__head">
+<h2 data-i18n="portfolio_h2">أعمالنا</h2>
+<p data-i18n="portfolio_p">نماذج من غرف منجزة بلمسة <img class="brand__logo" src="assets/logo.png" alt="Happy Child Universe">.</p>
+</div>
+<div class="grid2">
+<div class="bigshot">
+<img alt="غرفة وردية فاخرة" src="assets/room-1.jpg">
+<div class="bigshot__cap" data-i18n="port_cap1">غرفة فاخرة بألوان ناعمة + مكتب + رفوف</div>
+</img></div>
+<div class="bigshot">
+<img alt="غرفة وردية مميزة" src="assets/room-2.jpg"/>
+<div class="bigshot__cap" data-i18n="port_cap2">تصميم متكامل + إضاءة + تفاصيل ديكور راقية</div>
+</div>
+</div>
+<div class="center">
+<a class="btn" data-i18n="portfolio_cta" href="#contact">بغيتي نفس الستايل؟ تواصل معنا</a>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="section section--alt" id="contact">
+<div class="container">
+<div class="section__head">
+<h2 data-i18n="contact_h2">اطلب عرض السعر</h2>
+<p data-i18n="contact_p">عمر المعلومات وغادي نحيدو عليك الحيرة 👇</p>
+</div>
+<div class="contact">
+<form class="form" id="quoteForm">
+<div class="form__row">
+<label data-i18n="form_name_label">الاسم</label>
+<input data-i18n-placeholder="form_name_ph" name="name" placeholder="مثال: Anouar" required=""/>
+</div>
+<div class="form__row">
+<label data-i18n="form_city_label">المدينة</label>
+<input data-i18n-placeholder="form_city_ph" name="city" placeholder="مثال: Casablanca" required=""/>
+</div>
+<div class="form__row">
+<label data-i18n="form_phone_label">رقم الهاتف</label>
+<input data-i18n-placeholder="form_phone_ph" name="phone" placeholder="06xxxxxxxx" required=""/>
+</div>
+<div class="form__row">
+<label data-i18n="form_msg_label">شنو باغي؟</label>
+<textarea data-i18n-placeholder="form_msg_ph" name="message" placeholder="نوع الموديل + القياسات + اللون..." required="" rows="4"></textarea>
+</div>
+<button class="btn" data-i18n="form_submit" type="submit">إرسال عبر واتساب</button>
+<p class="form__note" data-i18n="form_note">كيتحل واتساب برسالة جاهزة.</p>
+</form>
+<div class="contact__side">
+<div class="sidecard">
+<h3 data-i18n="wa_title">واتساب مباشر</h3>
+<p data-i18n-html="wa_p">بدّل الرقم فـ <b>script.js</b></p>
+<a class="btn btn--ghost" data-i18n="wa_open" href="#" id="waDirect">فتح واتساب</a>
+</div>
+<div class="sidecard">
+<h3 data-i18n="ig_title">إنستغرام</h3>
+<p>@happy_child_universe</p>
+<a class="link" href="https://www.instagram.com/happy_child_universe?igsh=dXhqNmhlaDdkdXRi" rel="noreferrer" target="_blank"><span data-i18n="ig_visit">زيارة الحساب</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<section class="why-section">
+<h2>Pourquoi nous choisir ?</h2>
+<div class="why-grid">
+<div class="why-card">✔ Fabrication 100% sur mesure</div>
+<div class="why-card">✔ Matériaux de haute qualité</div>
+<div class="why-card">✔ Installation professionnelle</div>
+<div class="why-card">✔ Garantie &amp; suivi client</div>
+</div>
+</section><footer class="footer-pro">
+<div class="footer-grid">
+<div>
+<h3>Happy Child Universe</h3>
+<p>Chambres d’enfants haut de gamme au Maroc.</p>
+</div>
+<div>
+<h4>Contact</h4>
+<p>+212 660 609353</p>
+<p>Lundi - Samedi</p>
+</div>
+<div>
+<h4>Adresse</h4>
+<p>Maroc</p>
+</div>
+</div>
+<div class="copyright">© 2026 Happy Child Universe - Tous droits réservés.</div>
+</footer><div class="floating-social">
+<a aria-label="WhatsApp" class="float whatsapp" href="https://wa.me/212660609353?text=Bonjour%2C%20je%20voudrais%20un%20devis%20pour%20une%20chambre%20sur%20mesure." rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a aria-label="Instagram" class="float instagram" href="https://www.instagram.com/happy_child_universe?igsh=dXhqNmhlaDdkdXRi" rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="Facebook" class="float facebook" href="https://www.facebook.com/share/17GgU48R9d/?mibextid=wwXIfr" rel="noopener" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+</div><script src="script.js"></script>
+<div class="social-fixed">
+  <a href="https://wa.me/212660609353" target="_blank" aria-label="WhatsApp">🟢</a>
+  <a href="#" target="_blank" aria-label="Instagram">📷</a>
+  <a href="#" target="_blank" aria-label="Facebook">f</a>
 </div>
 
-<a href="https://wa.me/212660609353" class="whatsapp">💬</a>
-
-<script src="script.js"></script>
 </body>
 </html>

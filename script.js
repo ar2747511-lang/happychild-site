@@ -1,9 +1,101 @@
 
-// simple slider
-let imgs=["assets/hero1.jpg","assets/hero2.jpg","assets/hero3.jpg"];
-let i=0;
-setInterval(()=>{
-let el=document.querySelector(".hero img");
-i=(i+1)%imgs.length;
-el.src=imgs[i];
-},3000);
+function initHeroSlider(){
+  const slides = document.querySelectorAll('#heroSlider .slide');
+  if(!slides || slides.length === 0) return;
+
+  let i = 0;
+  setInterval(() => {
+    slides[i].classList.remove('active');
+    i = (i + 1) % slides.length;
+    slides[i].classList.add('active');
+  }, 3500);
+}
+
+function ensureButtonsExist() {
+  document.querySelectorAll('.tile, .card').forEach(card => {
+    // If any button already exists inside card, don't add a second one
+    if (card.querySelector('.model-btn')) return;
+
+    // Also if there is an old Arabic button with different class (btn / etc), remove it
+    card.querySelectorAll('a,button').forEach(el => {
+      const t = (el.innerText || '').trim();
+      if (t.includes('اطلب هذا') || t.includes('اطلب هذا الموديل')) {
+        el.remove();
+      }
+    });
+
+    const titleEl = card.querySelector('h3, h4, .title');
+    if (!titleEl) return;
+
+    const title = (titleEl.innerText || '').trim();
+
+    const btn = document.createElement('a');
+    btn.className = 'model-btn';
+    btn.target = '_blank';
+    btn.rel = 'noopener';
+
+    const msg = encodeURIComponent('Bonjour, je veux commander le modèle: ' + title);
+    btn.href = 'https://wa.me/212660609353?text=' + msg;
+
+    btn.textContent = 'Commander ce modèle';
+    card.appendChild(btn);
+  });
+}
+
+window.addEventListener('load', () => {
+  document.documentElement.lang = 'fr';
+  document.documentElement.dir = 'ltr';
+  document.body.classList.add('fr');
+
+  // Clean up any Arabic button duplicates first
+  document.querySelectorAll('.tile, .card').forEach(card => {
+    card.querySelectorAll('a,button').forEach(el => {
+      const t = (el.innerText || '').trim();
+      if (t.includes('اطلب هذا') || t.includes('اطلب هذا الموديل')) {
+        el.remove();
+      }
+    });
+  });
+
+  ensureButtonsExist();
+  initHeroSlider();
+});
+
+
+(function(){
+  function initHeroSlider(){
+    const slider = document.getElementById('heroSlider');
+    if(!slider) return;
+
+    const slides = Array.from(slider.querySelectorAll('.slide'));
+    if(slides.length <= 1) return;
+
+    // Respect reduced motion
+    const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(prefersReduced) return;
+
+    let i = slides.findIndex(s => s.classList.contains('active'));
+    if(i < 0) i = 0;
+
+    // Preload images to avoid blank on iOS
+    slides.forEach(s => {
+      const src = s.getAttribute('src');
+      if(src){
+        const im = new Image();
+        im.src = src;
+      }
+    });
+
+    setInterval(() => {
+      slides[i].classList.remove('active');
+      i = (i + 1) % slides.length;
+      slides[i].classList.add('active');
+    }, 3000);
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initHeroSlider);
+  } else {
+    initHeroSlider();
+  }
+})();
