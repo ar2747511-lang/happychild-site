@@ -507,6 +507,25 @@ body.fr{
   margin-bottom:15px;
 }
 
+.footer-social{
+  display:flex;
+  gap:12px;
+  margin-top:12px;
+}
+.footer-social__link{
+  width:38px;
+  height:38px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.18);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  text-decoration:none;
+  opacity:.92;
+}
+.footer-social__link:hover{opacity:1; transform:translateY(-1px);}
+
 .copyright{
   margin-top:40px;
   text-align:center;
@@ -610,32 +629,5 @@ body.fr{
   }
 }
 
-/* ===== SOCIAL FLOAT (ONLY ONE STACK) ===== */
-.social-fixed{
-  position: fixed;
-  right: 14px;
-  bottom: 120px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 9999;
-}
-.social-fixed a{
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 18px rgba(0,0,0,.12);
-  text-decoration: none;
-}
-@media (max-width:768px){
-  .social-fixed{
-    right: 10px;
-    bottom: 110px;
-  }
-}
-/* If another whatsapp button exists, hide it to avoid duplicates */
+/* If another old whatsapp button exists, hide it to avoid duplicates */
 .whatsapp-float{ display:none !important; }
