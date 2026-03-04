@@ -631,3 +631,44 @@ body.fr{
 
 /* If another old whatsapp button exists, hide it to avoid duplicates */
 .whatsapp-float{ display:none !important; }
+
+
+/* Header social icons (always visible on mobile + desktop) */
+.header-social{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-inline-start:14px;
+}
+.header-social .hs{
+  width:38px;
+  height:38px;
+  border-radius:14px;
+  border:1px solid var(--stroke);
+  background:rgba(255,255,255,.92);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  box-shadow:0 10px 24px rgba(31,41,55,.06);
+}
+.header-social .hs img{
+  width:20px;
+  height:20px;
+  display:block;
+}
+.header-social .hs:hover{transform:translateY(-1px);}
+
+/* Make floating WhatsApp icon use SVG cleanly */
+.floating-social .float img{
+  width:22px;
+  height:22px;
+}
+
+.footer-social__link img{width:18px;height:18px;display:block}
+
+@media (max-width: 520px){
+  .header__row{gap:10px;}
+  .header-social{margin-inline-start:8px;}
+  .header-social .hs{width:36px;height:36px;border-radius:12px;}
+}
