@@ -10,6 +10,7 @@
 
   <h2>Admin Dashboard</h2>
 
+  <!-- Login -->
   <div id="loginBox">
     <p><b>Login</b></p>
     <input id="adminEmail" type="email" placeholder="Email" />
@@ -18,9 +19,26 @@
     <p id="loginMsg"></p>
   </div>
 
+  <!-- Panel -->
   <div id="adminPanel" style="display:none;">
-    <button id="btnLogout">Logout</button>
-    <h3>Orders</h3>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+      <button id="btnLogout">Logout</button>
+
+      <input id="searchInput" type="text" placeholder="Search: name / phone / city" style="flex:1;min-width:220px;" />
+
+      <select id="statusFilter">
+        <option value="ALL">All statuses</option>
+        <option value="NEW">New</option>
+        <option value="CONFIRMED">Confirmed</option>
+        <option value="DELIVERED">Delivered</option>
+        <option value="CANCELED">Canceled</option>
+      </select>
+
+      <span id="stats" style="font-size:13px;color:#555;"></span>
+    </div>
+
+    <hr/>
+
     <div id="ordersList">Loading...</div>
   </div>
 
