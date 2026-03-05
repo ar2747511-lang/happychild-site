@@ -13,11 +13,15 @@ import {
   getAuth,
   signInWithEmailAndPassword,
   signOut,
-  onAuthStateChanged
+  onAuthStateChanged,
+  setPersistence,
+  browserLocalPersistence,
+  browserSessionPersistence
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 import { firebaseConfig } from "./firebase-config.js";
 
+// INIT
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
@@ -45,7 +49,6 @@ const ding = document.getElementById("ding");
 
 let ALL_ORDERS = [];
 let notificationsOn = false;
-let lastCount = 0;
 
 function escapeHtml(str) {
   return (str ?? "").toString()
@@ -64,10 +67,10 @@ function normalizeStatus(s) {
 }
 
 function getOrderStatus(data) {
-  // support old field "statu"
   return normalizeStatus(data.status ?? data.statu);
 }
 
+// MODAL
 function openModal(html) {
   modalContent.innerHTML = html;
   modalOverlay.style.display = "block";
@@ -76,7 +79,6 @@ function closeModal() {
   modalOverlay.style.display = "none";
   modalContent.innerHTML = "";
 }
-
 modalClose?.addEventListener("click", closeModal);
 modalOverlay?.addEventListener("click", (e) => {
   if (e.target === modalOverlay) closeModal();
@@ -90,11 +92,20 @@ btnLogin.onclick = async () => {
   loginMsg.textContent = "";
 
   try {
+    // مهم فـ iPhone/Safari: إلا فشل local persistence كنمشي session
+    try {
+      await setPersistence(auth, browserLocalPersistence);
+    } catch {
+      await setPersistence(auth, browserSessionPersistence);
+    }
+
     await signInWithEmailAndPassword(auth, email, pass);
+
   } catch (e) {
-    console.error(e);
-    loginMsg.textContent = "Login error";
-    alert("Login error");
+    console.error("LOGIN ERROR:", e);
+    const code = e?.code || "unknown";
+    loginMsg.textContent = `Login error: ${code}`;
+    alert(`Login error: ${code}`);
   }
 };
 
@@ -119,7 +130,6 @@ onAuthStateChanged(auth, (user) => {
 searchInput?.addEventListener("input", renderOrders);
 statusFilter?.addEventListener("change", renderOrders);
 dateFilter?.addEventListener("change", renderOrders);
-
 btnExport?.addEventListener("click", exportCSV);
 
 btnNotify?.addEventListener("click", async () => {
@@ -133,17 +143,13 @@ btnNotify?.addEventListener("click", async () => {
 async function loadOrders() {
   ordersList.innerHTML = "Loading...";
 
-  // Order by status (works always)
+  // ملاحظة: orderBy("status") كيحتاج status موجود فكل document
   const q = query(collection(db, "orders"), orderBy("status"));
   const snap = await getDocs(q);
 
   ALL_ORDERS = snap.docs.map((d) => {
     const data = d.data();
-    return {
-      id: d.id,
-      ...data,
-      status: getOrderStatus(data)
-    };
+    return { id: d.id, ...data, status: getOrderStatus(data) };
   });
 
   renderOrders();
@@ -155,7 +161,6 @@ function applyFilters(list) {
 
   return list.filter((o) => {
     const s = getOrderStatus(o);
-
     if (st !== "ALL" && s !== st) return false;
 
     if (!term) return true;
@@ -165,12 +170,7 @@ function applyFilters(list) {
     const city = (o.city ?? "").toString().toLowerCase();
     const ord = (o.ord ?? o.ORD ?? o.orderId ?? o.id ?? "").toString().toLowerCase();
 
-    return (
-      name.includes(term) ||
-      phone.includes(term) ||
-      city.includes(term) ||
-      ord.includes(term)
-    );
+    return name.includes(term) || phone.includes(term) || city.includes(term) || ord.includes(term);
   });
 }
 
@@ -184,7 +184,8 @@ function renderOrders() {
   });
 
   if (stats) {
-    stats.textContent = `Total: ${filtered.length} | NEW: ${counts.NEW} | CONFIRMED: ${counts.CONFIRMED} | DELIVERED: ${counts.DELIVERED} | CANCELED: ${counts.CANCELED}`;
+    stats.textContent =
+      `Total: ${filtered.length} | NEW: ${counts.NEW} | CONFIRMED: ${counts.CONFIRMED} | DELIVERED: ${counts.DELIVERED} | CANCELED: ${counts.CANCELED}`;
   }
 
   if (!filtered.length) {
@@ -241,10 +242,6 @@ function showOrder(id) {
       <div><b>City:</b> ${escapeHtml(o.city || "-")}</div>
       <div><b>Status:</b> ${escapeHtml(s)}</div>
       <div><b>ID:</b> ${escapeHtml(o.id)}</div>
-      <hr/>
-      <div style="font-size:12px;color:#666">
-        Fields: name / phone / city / status
-      </div>
     </div>
   `);
 }
@@ -256,7 +253,6 @@ async function setStatus(id, newStatus) {
     const ref = doc(db, "orders", id);
     await updateDoc(ref, { status: newStatus });
 
-    // update cache
     const i = ALL_ORDERS.findIndex(x => x.id === id);
     if (i >= 0) ALL_ORDERS[i].status = newStatus;
 
@@ -270,9 +266,7 @@ async function setStatus(id, newStatus) {
 function exportCSV() {
   const filtered = applyFilters(ALL_ORDERS);
 
-  const rows = [
-    ["id", "name", "phone", "city", "status"].join(",")
-  ];
+  const rows = [["id", "name", "phone", "city", "status"].join(",")];
 
   filtered.forEach(o => {
     const s = getOrderStatus(o);
@@ -309,8 +303,6 @@ function startAutoRefresh() {
       if (notificationsOn && after > before && before !== 0) {
         try { await ding?.play(); } catch {}
       }
-
-      lastCount = after;
     } catch {}
   }, 12000);
 }
