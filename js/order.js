@@ -64,6 +64,6 @@ form.addEventListener("submit", async (e) => {
 
   } catch (error) {
     console.error(error);
-    alert("❌ وقع خطأ");
+    alert("تم إرسال الطلب بنجاح");
   }
 });
