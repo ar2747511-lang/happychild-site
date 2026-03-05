@@ -1,11 +1,9 @@
-// 1) Create a Firebase project: https://console.firebase.google.com
-// 2) Add a Web App and copy the config object below.
-// 3) Paste it between the braces.
 export const firebaseConfig = {
- apiKey: "AIzaSyCEITsi736SdHkZKpcaUVCvXgp5-Fd-s2E",
-  authDomain: "happychild-orders.firebaseapp.com",
-  projectId: "happychild-orders",
-  storageBucket: "happychild-orders.firebasestorage.app",
-  messagingSenderId: "902705815946",
-  appId: "1:902705815946:web:933764455a820464046873",
+  apiKey: "AIzaSyDffH03zJIwuh3n3M3DdwhKAjBV65J91JA",
+  authDomain: "happychild-orders-525f7.firebaseapp.com",
+  projectId: "happychild-orders-525f7",
+  storageBucket: "happychild-orders-525f7.firebasestorage.app",
+  messagingSenderId: "448720716450",
+  appId: "1:448720716450:web:f5648d2ce34e02f1f98dfb",
+  measurementId: "G-DF6CLPB133"
 };
