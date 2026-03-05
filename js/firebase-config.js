@@ -1,8 +1,9 @@
 export const firebaseConfig = {
-  apiKey: "....",
-  authDomain: "happychild-orders.firebaseapp.com",
-  projectId: "happychild-orders",
-  storageBucket: "happychild-orders.firebasestorage.app",
-  messagingSenderId: "902705815946",
-  appId: "1:902705815946:web:933764455a820464046873"
+  apiKey: "PUT_YOUR_API_KEY",
+  authDomain: "PUT_YOUR_AUTH_DOMAIN",
+  projectId: "PUT_YOUR_PROJECT_ID",
+  storageBucket: "PUT_YOUR_STORAGE_BUCKET",
+  messagingSenderId: "PUT_YOUR_MESSAGING_SENDER_ID",
+  appId: "PUT_YOUR_APP_ID",
+  measurementId: "PUT_YOUR_MEASUREMENT_ID"
 };
