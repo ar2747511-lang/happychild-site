@@ -24,7 +24,7 @@
     <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
       <button id="btnLogout">Logout</button>
 
-      <input id="searchInput" type="text" placeholder="Search: name / phone / city" style="flex:1;min-width:220px;" />
+      <input id="searchInput" type="text" placeholder="Search: name / phone / city / ORD" style="flex:1;min-width:220px;" />
 
       <select id="statusFilter">
         <option value="ALL">All statuses</option>
@@ -34,13 +34,38 @@
         <option value="CANCELED">Canceled</option>
       </select>
 
+      <select id="dateFilter">
+        <option value="ALL">All time</option>
+        <option value="TODAY">Today</option>
+        <option value="YESTERDAY">Yesterday</option>
+        <option value="LAST7">Last 7 days</option>
+      </select>
+
+      <button id="btnExport">Export CSV</button>
+      <button id="btnNotify">Enable notifications</button>
+
       <span id="stats" style="font-size:13px;color:#555;"></span>
     </div>
 
     <hr/>
-
     <div id="ordersList">Loading...</div>
   </div>
+
+  <!-- Modal -->
+  <div id="modalOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);padding:20px;">
+    <div id="modalBox" style="max-width:520px;margin:0 auto;background:#fff;border-radius:12px;padding:16px;">
+      <div style="display:flex;justify-content:space-between;gap:10px;align-items:center;">
+        <b>Order details</b>
+        <button id="modalClose">✖</button>
+      </div>
+      <div id="modalContent" style="margin-top:12px;"></div>
+    </div>
+  </div>
+
+  <!-- sound for new orders -->
+  <audio id="ding" preload="auto">
+    <source src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" type="audio/ogg">
+  </audio>
 
   <script type="module" src="js/admin.js"></script>
 </body>
