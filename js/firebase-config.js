@@ -1,9 +1,10 @@
-export const firebaseConfig = {
-  apiKey: "PUT_YOUR_API_KEY",
-  authDomain: "PUT_YOUR_AUTH_DOMAIN",
-  projectId: "PUT_YOUR_PROJECT_ID",
-  storageBucket: "PUT_YOUR_STORAGE_BUCKET",
-  messagingSenderId: "PUT_YOUR_MESSAGING_SENDER_ID",
-  appId: "PUT_YOUR_APP_ID",
-  measurementId: "PUT_YOUR_MEASUREMENT_ID"
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDffH03zJIwuh3n3M3DdwhKAjBV65J91JA",
+  authDomain: "happychild-orders-525f7.firebaseapp.com",
+  projectId: "happychild-orders-525f7",
+  storageBucket: "happychild-orders-525f7.firebasestorage.app",
+  messagingSenderId: "448720716450",
+  appId: "1:448720716450:web:f5648d2ce34e02f1f98dfb",
+  measurementId: "G-DF6CLPB133"
 };
