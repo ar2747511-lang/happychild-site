@@ -1,6 +1,5 @@
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDffH03zJIwuh3n3M3DdwhKAjBV65J91JA",
+export const firebaseConfig = {
+  apiKey: "AIzaSyDfFH03zJIwuh3n3M3DdwhKAjBV65J91JA",
   authDomain: "happychild-orders-525f7.firebaseapp.com",
   projectId: "happychild-orders-525f7",
   storageBucket: "happychild-orders-525f7.firebasestorage.app",
